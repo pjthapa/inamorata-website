@@ -5,9 +5,9 @@ function EventPage() {
     return(
         <div className="pageContent">
             <div className="navbar container">
-                <Link to="/HomePage" className="nav home">HOME</Link>
-                <Link to="/EventPage" className="nav event">EVENTS</Link>
-                <Link to="/AboutPage" className="nav about">ABOUT</Link> 
+                <Link to="/" className="nav home">HOME</Link>
+                <Link to="/event" className="nav event">EVENTS</Link>
+                <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
         </div>
     )

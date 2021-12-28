@@ -5,7 +5,7 @@ function AboutPage() {
     return(
         <div className="pageContent">
             <div className="navbar container">
-                <Link to="/HomePage" className="nav home">HOME</Link>
+                <Link to="/" className="nav home">HOME</Link>
                 <Link to="/Event" className="nav event">EVENTS</Link>
                 <Link to="/About" className="nav about">ABOUT</Link> 
             </div>
