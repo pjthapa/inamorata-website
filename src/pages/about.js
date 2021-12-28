@@ -9,6 +9,9 @@ function AboutPage() {
                 <Link to="/Event" className="nav event">EVENTS</Link>
                 <Link to="/About" className="nav about">ABOUT</Link> 
             </div>
+            <div className="body content">
+                <img src="./images/cassie_making_cocktails.png"
+            </div>
         </div>
     )
 }
