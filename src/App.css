@@ -1,12 +1,19 @@
+#root{
+  height: 100%;
+  background-color: #f3feff;
+}
 .navbar.container{
-  background-color: black;
+  background-color: #fff3f8;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: antiquewhite;
+  color: #fffcf3;
   display: flex;
   justify-content: flex-start;
   padding-left: 2rem;
   height: 5rem;
-  gap: 2rem
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 a:link, a:visited{
   text-decoration: none;
@@ -18,4 +25,25 @@ a:link, a:visited{
 
 a:hover, a:active{
   text-decoration: underline;
+}
+
+.page.one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page.two{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page.three{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page.four{
+  display: flex;
+  justify-content: space-between;
 }

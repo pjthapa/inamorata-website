@@ -5,6 +5,7 @@ import {useState} from 'react';
 import HomePage from './pages/home.js';
 import EventPage from './pages/event.js';
 import AboutPage from './pages/about.js'
+import BackPage from './pages/eventBackend';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" exact element={<HomePage />}> </Route>
             <Route path="/event" element={<EventPage />}> </Route>
             <Route path="/about"  element={<AboutPage />}> </Route>
+            <Route path="/event/Cassie" element={<BackPage />} ></Route>
           </Routes>
         </div>
       </Router>

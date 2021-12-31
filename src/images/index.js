@@ -1,0 +1,10 @@
+export const file1 = require("./cassie1.png");
+export const file2 = require("./cassie2.png");
+export const file3 = require("./cassie3.png");
+export const file4 = require("./cassie4.png");
+export const file5 = require("./cassie5.png");
+export const logo1 = require("./logo1.png");
+export const file7 = require("./cassie7.png");
+export const file8 = require("./cassie8.png");
+export const file9 = require("./cassie9.png");
+export const img1 = require("./cocktail1.png");
