@@ -5,7 +5,7 @@
 .navbar.container{
   background-color: #fff3f8;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #fffcf3;
+  color: #000000;
   display: flex;
   justify-content: flex-start;
   padding-left: 2rem;
@@ -20,22 +20,30 @@ a:link, a:visited{
   display:flex;
   justify-content: center;
   align-items: center;
-  color:antiquewhite
+  color:black
 }
 
 a:hover, a:active{
   text-decoration: underline;
+  color:red
 }
 
-.page.one{
+.page.logo{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.page.logo img{
+  max-height: inherit;
 }
 
 .page.two{
   display: flex;
   justify-content: space-between;
+}
+.page.two img{
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .page.three{
