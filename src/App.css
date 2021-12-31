@@ -37,6 +37,12 @@ a:hover, a:active{
   max-height: inherit;
 }
 
+.page.logo p{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color:red;
+}
+
 .page.two{
   display: flex;
   justify-content: space-between;

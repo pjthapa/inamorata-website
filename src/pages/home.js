@@ -46,8 +46,10 @@ function HomePage() {
                 <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
             <div className="page container">
-                <div className="page one logo" style={{ height: `${pageHeight}px`,  transform: `translateY(${scrollY * 0.5}px)`}}>
-                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{ height: `${pageHeight * 0.8}px`}}/>
+                <div className="page one logo" style={{ height: `${pageHeight}px`}}>
+                    <p>IN'AMORATA OF MIXOLOGY</p>
+                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{ height: `${pageHeight * 0.8}px`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
+                    <p>UNDERGROUND BARTENDER</p>
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
 
