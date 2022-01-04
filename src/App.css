@@ -38,9 +38,12 @@ a:hover, a:active{
 }
 
 .page.logo p{
+  align-self: center;
+  margin: 2rem;
   writing-mode: vertical-rl;
   text-orientation: upright;
   color:red;
+  font-size: 3rem;
 }
 
 .page.two{

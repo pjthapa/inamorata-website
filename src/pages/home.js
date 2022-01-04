@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {Link} from "react-router-dom";
+import {useInView} from "react-intersection-observer";
 import {
     file1,file2, file3, file4, file5, logo1
 } from '../images/'
@@ -17,15 +18,7 @@ function HomePage() {
         window.addEventListener('scroll', handleScroll)
         return ()=> window.removeEventListener('scroll', handleScroll)
     }, []);
-
-    // create an async function that only allows scroll Y to change when the target element is in the viewport using intersection observer
-    let options ={
-        root: document.querySelector("#page2"),
-        rootMargin: '0px',
-        threshold: 1.0
-    }
-    // let observer = new IntersectionObserver(findScroll, options)
-
+    const topRef = useRef(null)
 
     //get the current height of the page --- this way the pages can be set to the current for all size viewports
     const initPageHeight = window.innerHeight
@@ -36,27 +29,29 @@ function HomePage() {
         return ()=> window.removeEventListener('onresize', handleHeight)
     },[])
 
-    console.log(pageHeight)
+    // create the inView hook
+    const {imgRef, inView} = useInView();
     
     return(
         <div className="pageContent">
-            <div className="navbar container" >
+            <div className="navbar container">
                 <Link to="/" className="nav home">HOME</Link>
                 <Link to="/event" className="nav event">EVENTS</Link>
                 <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
             <div className="page container">
                 <div className="page one logo" style={{ height: `${pageHeight}px`}}>
-                    <p>IN'AMORATA OF MIXOLOGY</p>
+                    <p>OF MIXOLOGY IN'AMORATA</p>
                     <img src={logo1} alt="In'amorata Logo" id="page1" style={{ height: `${pageHeight * 0.8}px`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
-                    <p>UNDERGROUND BARTENDER</p>
+                    <p>BARTENDER UNDERGROUND</p>
+                    
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
 
                 <div className="page two" style={{ height: `${pageHeight}px`}}>
-                    <p>VIRTUAL BARTENDING</p>
-                    <img src={file5} alt="Cassie Making Cocktails" id="page2"
+                    <img src={file5} alt="Cassie Making Cocktails" id="page2" ref={imgRef}
                      style={{/*transform: `translateY(${scrollY * 0.5}px)`,*/ height:`${pageHeight/3}px`}}></img>
+                     <h1>{inView}</h1>
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
 
