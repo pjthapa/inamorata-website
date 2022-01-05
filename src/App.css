@@ -46,14 +46,23 @@ a:hover, a:active{
   font-size: 3rem;
 }
 
-.page.two{
+.virtual.bartending{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around
 }
-.page.two img{
-  flex-direction: column;
+.bartending.text{
+  align-self: center;
+}
+
+.bartending.images{
   align-self: flex-start;
 }
+.bottles{
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .page.three{
   display: flex;

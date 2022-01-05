@@ -47,7 +47,7 @@ function HomePage() {
                 <div className="page two" style={{ height: `${pageHeight}px`}}>
                     <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
                 </div>
-                <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
+                <div class="empty scroll" style={{height:`${pageHeight* 1.2}px`}}></div>
 
                 <div className="page three">
                     <p>SPECIALIY COCKTAILS</p>
