@@ -4,13 +4,13 @@ import {useInView} from "react-intersection-observer";
 import {
     file1,file2, file3, file4, file5, logo1
 } from '../images/'
-
+import SecondPage from "../components/second_page";
 
 
 
 
 function HomePage() {
-
+    
     // create a scorll useEffect
     const [scrollY, setScrollY] = useState(0)
     const handleScroll = ()=> setScrollY(window.scrollY)
@@ -18,7 +18,6 @@ function HomePage() {
         window.addEventListener('scroll', handleScroll)
         return ()=> window.removeEventListener('scroll', handleScroll)
     }, []);
-    const topRef = useRef(null)
 
     //get the current height of the page --- this way the pages can be set to the current for all size viewports
     const initPageHeight = window.innerHeight
@@ -28,9 +27,6 @@ function HomePage() {
         window.addEventListener('resize', handleHeight)
         return ()=> window.removeEventListener('onresize', handleHeight)
     },[])
-
-    // create the inView hook
-    const {imgRef, inView} = useInView();
     
     return(
         <div className="pageContent">
@@ -49,9 +45,7 @@ function HomePage() {
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
 
                 <div className="page two" style={{ height: `${pageHeight}px`}}>
-                    <img src={file5} alt="Cassie Making Cocktails" id="page2" ref={imgRef}
-                     style={{/*transform: `translateY(${scrollY * 0.5}px)`,*/ height:`${pageHeight/3}px`}}></img>
-                     <h1>{inView}</h1>
+                    <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
 
@@ -69,8 +63,7 @@ function HomePage() {
             </div>
         </div>
     )
-    // var imageHeight = document.getElementById("file1").style.height;
-    // document.getElementsByClassName("parallax text 1").style.height = imageHeight;
+
 
 }
 
