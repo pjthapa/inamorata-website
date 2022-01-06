@@ -1,6 +1,7 @@
 #root{
   height: 100%;
   background-color: #f3feff;
+  overflow: hidden;
 }
 .navbar.container{
   background-color: #fff3f8;
@@ -52,6 +53,8 @@ a:hover, a:active{
 }
 .bartending.text{
   align-self: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: red;
 }
 
 .bartending.images{
@@ -62,11 +65,33 @@ a:hover, a:active{
   justify-content: center;
 }
 
-
-
 .page.three{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: space-around;
+  padding-top: 5rem;
+}
+
+.page.three .img{
+  height: 30rem;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.page.three .container {
+  padding: 2px 16px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
 }
 
 .page.four{

@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
-import {useInView} from "react-intersection-observer";
 import {
-    file1,file2, file3, file4, file5, logo1
+    logo1, cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6
 } from '../images/'
 import SecondPage from "../components/second_page";
+import CreateCard from "../components/cocktailCard";
 
 
 
@@ -48,16 +48,21 @@ function HomePage() {
                     <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight* 1.2}px`}}></div>
-
+                
+                <p>SPECIALIY COCKTAILS</p>
                 <div className="page three">
-                    <p>SPECIALIY COCKTAILS</p>
-                    <img src={file4} alt="Specialty Cocktails Anamorata" id="page3" />
+                    <CreateCard image={cocktail1} description={`Description Here`}></CreateCard>
+                    <CreateCard image={cocktail2} description={`cocktail2`}></CreateCard>
+                    <CreateCard image={cocktail3} description={`cocktail 3`}></CreateCard>
                 </div>
-                <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
+                <div className="page three">
+                    <CreateCard image={cocktail4} description={`Description Here`}></CreateCard>
+                    <CreateCard image={cocktail5} description={`cocktail2`}></CreateCard>
+                    <CreateCard image={cocktail6} description={`cocktail 3`}></CreateCard>
+                </div>
 
                 <div className="page four">
                     <p>CONSULTING AND EVENTS PLANNING</p>
-                    <img src={file3} alt="Cassie creating Customer request" id="page4" />
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
             </div>

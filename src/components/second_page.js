@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
-import {cocktail, img3, strawberry_image,  whisky_image, shaker, creamyMartini} from "../images/"
+import {cocktail, daquiri, strawberry_image,  whisky_image, shaker, creamyMartini} from "../images/"
 
 const SecondPage = (props) =>{
-    const {ref, inView, entry } = useInView({
-        threshold: 0.6
-    });
 
     const [glasstranslate, setGlasstranslate] = useState(0)
     const handleGlass = () =>{
@@ -42,10 +38,10 @@ const SecondPage = (props) =>{
     // )
 
     return (
-        <div ref ={ref} className="virtual bartending">
+        <div className="virtual bartending">
             <div class="bartending text">
                 <h1>VIRTUAL BARTENDING</h1>
-                <img src={shaker.default} style={{transform: `translateY(${glasstranslate * 0.6 }px)`, height:`${props.data / 2}px`}}  alt="shaker"/>
+                <img src={shaker.default} style={{transform: `translateY(${glasstranslate * 0.6 }px) rotate(45deg)`, height:`${props.data / 2}px`}}  alt="shaker"/>
 
             </div>
             <div class="bartending images">
@@ -56,7 +52,7 @@ const SecondPage = (props) =>{
                     
                 </div>
                 <img src={cocktail.default} style={{transform: `translateY(${glasstranslate * 0.4 }px)`, height:`${props.data / 2}px`}}  alt="cosmopolitan"/>
-                <img src={img3.default} style={{transform: `translateY(${glasstranslate * 0.6 }px)`, height:`${props.data / 2}px`}}  alt="daquiri"/>   
+                <img src={daquiri.default} style={{transform: `translateY(${glasstranslate * 0.6 }px)`, height:`${props.data / 2}px`}}  alt="daquiri"/>   
                 <img src={creamyMartini.default} style={{transform: `translateY(${glasstranslate * 0.8 }px)`, height:`${props.data / 2}px`}}  alt="martini"/>          
                 
             </div>
