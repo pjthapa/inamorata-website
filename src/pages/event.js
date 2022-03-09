@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Createcocktaillist from "../components/cocktailList";
 import {useState, useEffect} from "react";
 import {useHistory} from 'react-router-dom';
+import Logo from "../components/logo";
 
 
 function EventPage() {
@@ -39,9 +40,10 @@ function EventPage() {
         <div className="pageContent">
             <div className="navbar container">
                 <Link to="/" className="nav home">HOME</Link>
-                <Link to="/event" className="nav event">EVENTS</Link>   {/* rename virtual bartending  */}
+                <Link to="/event" className="nav event" style={{background :"#f3feff", paddingLeft:"2rem", paddingRight:"2rem"}}>EVENTS</Link>   {/* rename virtual bartending  */}
                 <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
+            <Logo />
             <div className="video player">                              {/* Add video player here; from YT */}
                 <p>Video Plays here</p>
             </div>
