@@ -51,6 +51,7 @@ a:hover, a:active{
   justify-content: space-around
 }
 .bartending.text{
+  
   align-self: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: red;
@@ -71,6 +72,13 @@ a:hover, a:active{
   padding: 5rem;
 }
 
+.cocktail.texts{
+  padding-left: 5rem;
+  align-self: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: red;
+}
+
 .page.three img{
   object-fit: contain;
   width: 100%;
@@ -86,3 +94,13 @@ a:hover, a:active{
   filter: grayscale(1);
 }
 
+.consulting.texts{
+  padding-left: 5rem;
+  align-self: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+.page.four{
+  padding: 5rem;
+}
