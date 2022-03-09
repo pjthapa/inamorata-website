@@ -5,6 +5,7 @@ import {
 } from '../images/'
 import SecondPage from "../components/second_page";
 import CreateCard from "../components/cocktailCard";
+import ContactForm from "../components/form";
 
 
 
@@ -31,7 +32,7 @@ function HomePage() {
     return(
         <div className="pageContent">
             <div className="navbar container">
-                <Link to="/" className="nav home">HOME</Link>
+                <Link to="/" className="nav home" style={{background :"#f3feff", paddingLeft:"2rem", paddingRight:"2rem"}}>HOME</Link>
                 <Link to="/event" className="nav event">EVENTS</Link>
                 <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
@@ -49,8 +50,9 @@ function HomePage() {
                 </div>
                 <div class="empty scroll" style={{height:`${pageHeight* 1.2}px`}}></div>
                 
-                <p>SPECIALIY COCKTAILS</p>
+                <h1 className="cocktail texts">  2) SPECIALIY COCKTAILS</h1>
                 <div className="page three">
+                    
                     <CreateCard image={cocktail1} description={`Description Here`}></CreateCard>
                     <CreateCard image={cocktail2} description={`cocktail2`}></CreateCard>
                     <CreateCard image={cocktail3} description={`cocktail 3`}></CreateCard>
@@ -62,9 +64,10 @@ function HomePage() {
                 </div>
 
                 <div className="page four">
-                    <p>CONSULTING AND EVENTS PLANNING</p>
+                    <h1 className="consulting texts">  3) CONSULTING AND EVENTS PLANNING</h1>
+                    <ContactForm />
                 </div>
-                <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
+                
             </div>
         </div>
     )
