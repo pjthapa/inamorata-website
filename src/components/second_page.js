@@ -40,7 +40,8 @@ const SecondPage = (props) =>{
     return (
         <div className="virtual bartending">
             <div class="bartending text">
-                <h1>VIRTUAL BARTENDING</h1>
+                <h1>OUR SERVICES:</h1>
+                <h1>1) VIRTUAL BARTENDING</h1>
                 <img src={shaker.default} style={{transform: `translateY(${glasstranslate * 0.6 }px) rotate(45deg)`, height:`${props.data / 2}px`}}  alt="shaker"/>
 
             </div>
