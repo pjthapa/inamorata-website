@@ -1,0 +1,59 @@
+.third.page{
+    height: 100vh;
+ 
+    display: flex;
+}
+
+.picture.frame{
+    z-index: 1;
+    width: 95%;
+    height: 80vh;
+    background-color: #BACDFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture.display{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.picture.display img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.picture.scroll{
+    align-items: flex-end;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 1vh;
+}
+
+.scroll.container{
+    width: 12vh;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.scroll.container:hover{
+    transform: scale(1.02);
+}
+
+.picture.scroll img{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 50ms ease-out;
+
+  }
+  
+  .picture.scroll img:hover{
+    transform: scale(1.02);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }

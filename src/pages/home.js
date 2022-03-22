@@ -4,7 +4,7 @@ import {
     logo1, cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6
 } from '../images/'
 import SecondPage from "../components/second_page";
-import CreateCard from "../components/cocktailCard";
+import ThirdPage from "../components/third_page";
 import ContactForm from "../components/form";
 
 
@@ -20,7 +20,7 @@ function HomePage() {
         return ()=> window.removeEventListener('scroll', handleScroll)
     }, []);
 
-    //get the current height of the page --- this way the pages can be set to the current for all size viewports
+    // get the current height of the page --- this way the pages can be set to the current for all size viewports
     const initPageHeight = window.innerHeight
     const [pageHeight, setPageHeight] = useState(initPageHeight)
     const handleHeight = ()=> setPageHeight(window.innerHeight)
@@ -37,30 +37,22 @@ function HomePage() {
                 <Link to="/about" className="nav about">ABOUT</Link> 
             </div>
             <div className="page container">
-                <div className="page one logo" style={{ height: `${pageHeight}px`}}>
+                <div className="page one logo" >
                     <p>OF MIXOLOGY IN'AMORATA</p>
-                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{ height: `${pageHeight * 0.8}px`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
+                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `${pageHeight * 0.8}px`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
                     <p>BARTENDER UNDERGROUND</p>
                     
                 </div>
-                <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
+                <div class="empty scroll" ></div>
 
-                <div className="page two" style={{ height: `${pageHeight}px`}}>
-                    <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
+                <div className="page two" >
+                    {/* <SecondPage data={pageHeight} scroll={scrollY}></SecondPage> */}
                 </div>
-                <div class="empty scroll" style={{height:`${pageHeight* 1.2}px`}}></div>
+                <div class="empty scroll" ></div>
                 
+                <div className="page three">
                 <h1 className="cocktail texts">  2) SPECIALIY COCKTAILS</h1>
-                <div className="page three">
-                    
-                    <CreateCard image={cocktail1} description={`Description Here`}></CreateCard>
-                    <CreateCard image={cocktail2} description={`cocktail2`}></CreateCard>
-                    <CreateCard image={cocktail3} description={`cocktail 3`}></CreateCard>
-                </div>
-                <div className="page three">
-                    <CreateCard image={cocktail4} description={`Description Here`}></CreateCard>
-                    <CreateCard image={cocktail5} description={`cocktail2`}></CreateCard>
-                    <CreateCard image={cocktail6} description={`cocktail 3`}></CreateCard>
+                    <ThirdPage />
                 </div>
 
                 <div className="page four">

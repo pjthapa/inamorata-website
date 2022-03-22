@@ -42,7 +42,7 @@ const SecondPage = (props) =>{
             <div class="bartending text">
                 <h1>OUR SERVICES:</h1>
                 <h1>1) VIRTUAL BARTENDING</h1>
-                <img src={shaker.default} style={{transform: `translateY(${glasstranslate * 0.6 }px) rotate(45deg)`, height:`${props.data / 2}px`}}  alt="shaker"/>
+                <img src={shaker} style={{transform: `translateY(${glasstranslate * 0.6 }px) rotate(45deg)`, height:`${props.data / 2}px`}}  alt="shaker"/>
 
             </div>
             <div class="bartending images">
@@ -52,8 +52,8 @@ const SecondPage = (props) =>{
                     <div> <img src={strawberry_image.default} alt="strawberry" style={{height:`${props.data / 10}px`}} /></div>
                     
                 </div>
-                <img src={cocktail.default} style={{transform: `translateY(${glasstranslate * 0.4 }px)`, height:`${props.data / 2}px`}}  alt="cosmopolitan"/>
-                <img src={daquiri.default} style={{transform: `translateY(${glasstranslate * 0.6 }px)`, height:`${props.data / 2}px`}}  alt="daquiri"/>   
+                <img src={cocktail} style={{transform: `translateY(${glasstranslate * 0.4 }px)`, height:`${props.data / 2}px`}}  alt="cosmopolitan"/>
+                <img src={daquiri} style={{transform: `translateY(${glasstranslate * 0.6 }px)`, height:`${props.data / 2}px`}}  alt="daquiri"/>   
                 <img src={creamyMartini.default} style={{transform: `translateY(${glasstranslate * 0.8 }px)`, height:`${props.data / 2}px`}}  alt="martini"/>          
                 
             </div>

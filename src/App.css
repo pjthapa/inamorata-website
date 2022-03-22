@@ -32,6 +32,7 @@ a:hover, a:active{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .page.logo img{
   max-height: inherit;
@@ -44,6 +45,9 @@ a:hover, a:active{
   text-orientation: upright;
   color:red;
   font-size: 3rem;
+}
+.empty.scroll{
+  height: 100vh;
 }
 
 .virtual.bartending{
@@ -65,37 +69,18 @@ a:hover, a:active{
   justify-content: center;
 }
 
-.page.three{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5rem;
-  padding: 5rem;
-}
 
 .cocktail.texts{
-  padding-left: 5rem;
+  text-align: center;
   align-self: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: red;
 }
 
-.page.three img{
-  object-fit: contain;
-  width: 100%;
-  display: block;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  transition: all 50ms ease-out;
-}
 
-.page.three img:hover{
-  transform: scale(1.02);
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
 
 .consulting.texts{
-  padding-left: 5rem;
+  text-align: center;
   align-self: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: red;
