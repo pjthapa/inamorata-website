@@ -46,7 +46,7 @@ function HomePage() {
                 <div class="empty scroll" ></div>
 
                 <div className="page two" >
-                    {/* <SecondPage data={pageHeight} scroll={scrollY}></SecondPage> */}
+                    <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
                 </div>
                 <div class="empty scroll" ></div>
                 

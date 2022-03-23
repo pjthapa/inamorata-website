@@ -19,7 +19,13 @@
     display: flex;
     justify-content: space-around;
 }
-
+.navigate.icons{
+    margin: auto;
+    opacity: 0.5;
+}
+.navigate.icons:hover{
+    opacity: 1;
+}
 .picture.display img{
     max-height: 100%;
     max-width: 100%;
@@ -28,7 +34,7 @@
 .picture.scroll{
     align-items: flex-end;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 1vh;
 }
 
@@ -39,6 +45,7 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: black;
+    margin-right: 1rem;
 }
 
 .scroll.container:hover{
