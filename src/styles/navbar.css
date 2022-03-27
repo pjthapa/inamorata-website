@@ -1,0 +1,53 @@
+.navigation{
+    background-color: black;
+    overflow: hidden;
+}
+
+.navigation .nav{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation .nav:hover{
+    background-color: cornflowerblue;
+}
+
+.navigation .nav:active{
+    background-color: #f3feff ;
+}
+
+.navigation .icon{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .navigation .nav{
+        display: none;
+    }
+    .navigation .nav.icon{
+        float:right;
+        display: block;
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .navigation.responsive{
+        position: relative;
+    }
+    .navigation.responsive a.icon{
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+
+    .navigation.responsive .nav{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

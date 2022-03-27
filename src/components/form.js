@@ -36,6 +36,9 @@ function ContactForm(){
 
     return(
         <div className="contact form">
+            <div className="description">
+                Contact us with any queries and we will get back to you!
+            </div>
             <form onSubmit={onSubmit}>
                 <div className="name">
                     <label for="from_name">Name: </label>

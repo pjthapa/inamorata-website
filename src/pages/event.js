@@ -4,6 +4,7 @@ import Createcocktaillist from "../components/cocktailList";
 import {useState, useEffect} from "react";
 import {useHistory} from 'react-router-dom';
 import Logo from "../components/logo";
+import Navbar from "../components/navbar";
 
 
 function EventPage() {
@@ -39,9 +40,7 @@ function EventPage() {
     return(
         <div className="pageContent">
             <div className="navbar container">
-                <Link to="/" className="nav home">HOME</Link>
-                <Link to="/event" className="nav event" style={{background :"#f3feff", paddingLeft:"2rem", paddingRight:"2rem"}}>EVENTS</Link>   {/* rename virtual bartending  */}
-                <Link to="/about" className="nav about">ABOUT</Link> 
+                <Navbar />
             </div>
             <Logo />
             <div className="video player">                              {/* Add video player here; from YT */}

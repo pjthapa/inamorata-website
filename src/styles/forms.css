@@ -3,6 +3,12 @@
     background: #F2F3EB;
 
 }
+.description{
+	text-align: center;
+	font-family: 'Montserrat', Arial, sans-serif;
+	margin-top: auto;
+	margin-bottom: auto;
+}
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
