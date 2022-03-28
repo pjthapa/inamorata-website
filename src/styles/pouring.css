@@ -1,0 +1,50 @@
+.second.page{
+    position: relative;
+}
+.bartending.text{
+    transform: rotate(0);
+}
+
+.pour.animation.container{
+    max-height: 40rem;
+    max-width: 40rem;
+}
+.whisky.bottle{
+    max-height: 40rem;
+    max-width: 40rem;
+}
+
+.whisky.bottle #jamo{
+    transform: rotate(90deg);
+    height: 40rem;
+}
+
+#mug{
+    position: absolute;
+    height: 20rem;
+    margin-left: 30rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .pour.animation.container{
+        max-width: 10rem;
+    }
+    .whisky.bottle{
+        max-width: 10rem;
+    }
+    .whisky.bottle #jamo{
+        height: 10rem;
+    }
+    #mug{
+        height: 5rem;
+        margin-left: 8rem;
+    }
+}
+
+.cocktail.texts{
+    text-align: center;
+    align-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+  }

@@ -6,6 +6,7 @@ import SecondPage from "../components/second_page";
 import ThirdPage from "../components/third_page";
 import ContactForm from "../components/form";
 import Navbar from "../components/navbar";
+import Pouringbottle from "../components/pouringBottle";
 
 
 
@@ -47,9 +48,9 @@ function HomePage() {
                 <div class="empty scroll" ></div>
 
                 <div className="page two" >
-                    <SecondPage data={pageHeight} scroll={scrollY}></SecondPage>
+                    <Pouringbottle />
                 </div>
-                <div class="empty scroll" ></div>
+
                 
                 <div className="page three">
                 <h1 className="cocktail texts">  2) SPECIALITY COCKTAILS</h1>
