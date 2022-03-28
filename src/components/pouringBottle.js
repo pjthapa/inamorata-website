@@ -1,10 +1,10 @@
 import "../styles/pouring.css"
 import { useParallax } from "react-scroll-parallax";
-import {whisky_image, cocktail} from "../images/" 
+import {whisky_image, glass, shaker, daquiri} from "../images/"
 
 export default function Pouringbottle(){
     const parallax = useParallax({
-        rotate: [0,60],
+        rotate: [0,50],
     });
 
     return(
@@ -18,7 +18,9 @@ export default function Pouringbottle(){
                     <img id="jamo" src={whisky_image.default} alt="whisky bottle" />
                 </div>
             </div>
-            <img src={cocktail} alt="copper mug"  id="mug"/>
+            <img src ={glass}  alt="measuring cup" id="mug" />
+            <img src ={shaker} alt="cocktail shaker" id="shaker" />
+            <img src={daquiri} alt ="copper mug" id="copper" />
 
         </div> 
     )

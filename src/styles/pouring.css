@@ -1,8 +1,11 @@
 .second.page{
     position: relative;
+    background-color: #fff6f3;
+    padding-bottom: 10rem;
 }
 .bartending.text{
     transform: rotate(0);
+
 }
 
 .pour.animation.container{
@@ -23,7 +26,23 @@
     position: absolute;
     height: 20rem;
     margin-left: 30rem;
-}
+    margin-top: -16rem;
+  }
+
+  #shaker{
+        position: absolute;
+        height: 20rem;
+        margin-left: 0;
+        margin-top: -19rem;
+        transform: rotate(15deg);
+  }
+  #copper{
+    position: absolute;
+    height: 25rem;
+    margin-left: 20rem;
+    margin-top: -22rem;
+  }
+
 
 
 @media screen and (max-width: 600px) {
@@ -37,14 +56,18 @@
         height: 10rem;
     }
     #mug{
-        height: 5rem;
-        margin-left: 8rem;
+        height: 7rem;
+        margin-left: 7rem;
+        margin-top: -4rem;
+    }
+    #shaker{
+        height: 7rem;
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+    #copper{
+        height: 11rem;
+        margin-left: 14rem;
+        margin-top: -1rem;
     }
 }
-
-.cocktail.texts{
-    text-align: center;
-    align-self: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: red;
-  }

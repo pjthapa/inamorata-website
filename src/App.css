@@ -1,8 +1,15 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
 #root{
   background-color: #f3feff;
   overflow: hidden;
 }
-
+.page.contianer{
+  overflow: hidden;
+  margin: 0;
+}
 
 /* page 1 */
 .page.logo{
@@ -15,33 +22,15 @@
   max-height: inherit;
 }
 
-.page.logo p{
-  align-self: center;
-  margin: 2rem;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  color:red;
-  font-size: 3rem;
-}
+
 .empty.scroll{
   height: 100vh;
 }
 /* Page 2 */
 
 /* page 3 */
-.page.three{
-  margin-top: 20rem;
-}
 
 
-
-/* Page four */
-.consulting.texts{
-  text-align: center;
-  align-self: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: red;
-}
 
 @media screen and (max-width: 600px){
   .page.one.logo img{

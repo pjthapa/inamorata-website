@@ -1,3 +1,8 @@
+.page.three{
+    background-color: #f3feff;
+    margin-top: 0;
+}
+
 .third.page{
     height: 100vh;
     display: flex;
