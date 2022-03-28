@@ -17,6 +17,7 @@ export default function Navbar(){
             <Link to="/" className="nav elememt home" >HOME</Link>
             <Link to="/event" className="nav element event">EVENTS</Link>
             <Link to="/about" className="nav element about">ABOUT</Link> 
+            <a href="https://www.instagram.com/underground.bartender/" className="nav element underground">UNDERGROUND BARTENDER</a>
             <a className="nav icon"  onClick={displayMenu}>
                 <i class="fa fa-bars"></i>
             </a>

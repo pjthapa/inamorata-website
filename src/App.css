@@ -61,8 +61,8 @@
   color: red;
 }
 
-@media only screen and (max-width: 600px){
-  body{
-    background-color: black;
+@media screen and (max-width: 600px){
+  .page.one.logo img{
+    max-width: 100%;
   }
 }
