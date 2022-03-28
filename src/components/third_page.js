@@ -26,14 +26,14 @@ function ThirdPage() {
         <div className="third page">
             <div className="picture frame">
                 <div className="picture display">
-                    <div className="navigate icons">
+                    <div className="navigate icons left">
                         <IconContext.Provider value= {{color: 'white', size: 70}}>
                             <AiOutlineLeftCircle onClick={() => setCurrentImage(getPrevious())}/>
                         </IconContext.Provider>
                     </div>
                     <img src={currentImage} />
 
-                    <div className="navigate icons">
+                    <div className="navigate icons right">
                         <IconContext.Provider value= {{color: 'white', size: 70}}>
                             <AiOutlineRightCircle onClick={() => setCurrentImage(getNext())}/>
                         </IconContext.Provider>

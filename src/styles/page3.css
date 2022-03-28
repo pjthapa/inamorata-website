@@ -64,3 +64,22 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+
+  @media screen and (max-width: 600px){
+      .picture.frame{
+          max-height: auto;
+      }
+      .picture.display{
+          position: relative;
+      }
+      .navigate.icons{
+          position: absolute;
+          top: 50%
+      }
+      .navigate.icons.left{
+          left: 0;
+      }
+      .navigate.icons.right{
+          right: 0;
+      }
+  }
