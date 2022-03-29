@@ -13,6 +13,7 @@
 
 /* page 1 */
 .page.logo{
+  z-index:0 ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,13 +23,6 @@
   max-height: inherit;
 }
 
-
-.empty.scroll{
-  height: 100vh;
-}
-/* Page 2 */
-
-/* page 3 */
 
 
 

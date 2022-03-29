@@ -7,6 +7,7 @@ import ThirdPage from "../components/third_page";
 import ContactForm from "../components/form";
 import Navbar from "../components/navbar";
 import Pouringbottle from "../components/pouringBottle";
+import { useParallax } from "react-scroll-parallax";
 
 
 
@@ -40,12 +41,8 @@ function HomePage() {
             </div>
             <div className="page container">
                 <div className="page one logo" >
-                    <p>OF MIXOLOGY IN'AMORATA</p>
-                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `80vh`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
-                    <p>BARTENDER UNDERGROUND</p>
-                    
+                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `80vh`,  transform: `translateY(${scrollY * 0.5}px)`, opacity: `${((pageHeight - scrollY)/pageHeight)*100}%`}}/>
                 </div>
-                <div class="empty scroll" ></div>
 
                 <div className="page two" >
                     <Pouringbottle />

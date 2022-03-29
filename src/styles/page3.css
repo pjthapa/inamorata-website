@@ -70,11 +70,16 @@
   }
 
   @media screen and (max-width: 600px){
+      .third.page{
+          height: auto;
+          padding-bottom: 3rem;
+      }
       .picture.frame{
-          max-height: auto;
+          height: fit-content;
       }
       .picture.display{
           position: relative;
+          height: auto;
       }
       .navigate.icons{
           position: absolute;
@@ -85,5 +90,8 @@
       }
       .navigate.icons.right{
           right: 0;
+      }
+      .picture.scroll{
+          margin-top:auto;
       }
   }
