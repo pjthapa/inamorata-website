@@ -20,8 +20,7 @@ export default function Pouringbottle(){
                     </div>
                 </div>
                 <img src ={glass}  alt="measuring cup" id="mug" />
-                <img src ={shaker} alt="cocktail shaker" id="shaker" />
-                <img src={daquiri} alt ="copper mug" id="copper" />
+
             </div>
             <div className="right partition">
                 <h1>TUNE IN FOR MORE DETAILS LATER</h1>
