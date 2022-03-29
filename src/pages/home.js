@@ -37,6 +37,7 @@ function HomePage() {
             <div className="page container">
                 <div className="page one logo" >
                     <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `80vh`,  transform: `translateY(${scrollY * 0.5}px)`, opacity: `${((pageHeight - (scrollY*1.2))/pageHeight)*100}%`}}/>
+                    <div className="empty scroll"></div>
                 </div>
 
                 <div className="page two" >

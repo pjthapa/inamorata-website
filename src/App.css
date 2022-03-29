@@ -22,7 +22,9 @@
 }
 .page.logo img{
   max-height: inherit;
+  border-radius: 50%;
 }
+
 
 
 .footer{
@@ -33,7 +35,13 @@
 }
 
 @media screen and (max-width: 600px){
+  .page.logo{
+    display: block;
+  }
   .page.one.logo img{
     max-width: 100%;
+  }
+  .empty.scroll{
+    height: 30vh;
   }
 }
