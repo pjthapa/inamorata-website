@@ -1,11 +1,12 @@
 .second.page{
     position: relative;
-    background-color: #fff6f3;
+    background: linear-gradient(0deg, #fff6f3, #f3feff),
+                linear-gradient(90deg, #f3feff, #f2fff3);
     padding-bottom: 10rem;
     display: flex;
 }
 .bartending.text{
-    font-family: cursive;
+    font-family: 'Montserrat', Arial, sans-serif;
     transform: rotate(0);
     text-align: center;
 }
@@ -49,13 +50,12 @@
     width: 100%;
     z-index: 0;
     margin-left: 5rem;
-    background: linear-gradient(90deg, #fff6f3, #f2fff3);
     display: flex;
     
 }
 .right.partition h1{
     background-color: #f3feff;
-    font-family: cursive;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: auto;
 }
 

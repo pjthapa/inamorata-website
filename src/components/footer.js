@@ -1,9 +1,11 @@
 import React from "react";
 
-function Footer(){
+export default function Footer(){
     return(
-        <Footer>
-            Footer
-        </Footer>
+        <footer>
+            <div className="label">
+                In'amorata of Mixology  Prasanna
+            </div>
+        </footer>
     )
 }

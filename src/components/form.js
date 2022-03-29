@@ -87,7 +87,7 @@ function ContactForm(){
                     <br />
                 </div>
 
-                <button type="submt">Submit</button>
+                <button type="submt" id="submit">Submit</button>
             </form>
         </div>
     )

@@ -10,8 +10,8 @@
 .description{
 	text-align: center;
 	font-family: 'Montserrat', Arial, sans-serif;
-	margin-top: auto;
-	margin-bottom: auto;
+	font-size: 2rem;
+
 }
 input[type='text'], [type='email'], select, textarea {
 	background: none;
@@ -37,7 +37,13 @@ input[type='text'], [type='email'], select, textarea {
 	transition: all 0.3s;
 }
 
+button{
+	
+}
+
 form {
     padding: 37.5px;
     margin: 50px 0;
+	margin-bottom: 0;
+	/* padding-bottom: 0; */
   }

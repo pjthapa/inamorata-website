@@ -13,7 +13,8 @@
 
 /* page 1 */
 .page.logo{
-  z-index:0 ;
+  position: relative;
+  z-index:1 ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,12 @@
 }
 
 
-
+.footer{
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  color: #f3feff;
+}
 
 @media screen and (max-width: 600px){
   .page.one.logo img{

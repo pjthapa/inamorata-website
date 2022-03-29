@@ -9,7 +9,7 @@ import { AiOutlineRightCircle} from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
 
 function ThirdPage() {
-    const [currentImage, setCurrentImage] = useState(cocktail2)
+    const [currentImage, setCurrentImage] = useState(cocktail5)
     var cocktail_array = [cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6]
     const getNext= () => {
         var current_index = cocktail_array.indexOf(currentImage)

@@ -2,12 +2,10 @@ import React, {useState, useEffect} from "react";
 import {
     logo1
 } from '../images/'
-import SecondPage from "../components/second_page";
 import ThirdPage from "../components/third_page";
 import ContactForm from "../components/form";
 import Navbar from "../components/navbar";
 import Pouringbottle from "../components/pouringBottle";
-import { useParallax } from "react-scroll-parallax";
 
 
 
@@ -35,13 +33,10 @@ function HomePage() {
         <div className="pageContent">
             <div className="navbar container">
                 <Navbar />
-                {/* <Link to="/" className="nav home" style={{background :"black", paddingLeft:"2rem", paddingRight:"2rem"}}>HOME</Link>
-                <Link to="/event" className="nav event">EVENTS</Link>
-                <Link to="/about" className="nav about">ABOUT</Link>  */}
             </div>
             <div className="page container">
                 <div className="page one logo" >
-                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `80vh`,  transform: `translateY(${scrollY * 0.5}px)`, opacity: `${((pageHeight - scrollY)/pageHeight)*100}%`}}/>
+                    <img src={logo1} alt="In'amorata Logo" id="page1" style={{  height: `80vh`,  transform: `translateY(${scrollY * 0.5}px)`, opacity: `${((pageHeight - (scrollY*1.2))/pageHeight)*100}%`}}/>
                 </div>
 
                 <div className="page two" >
@@ -50,16 +45,17 @@ function HomePage() {
 
                 
                 <div className="page three">
-                <h1 className="cocktail texts">  2) SPECIALITY COCKTAILS</h1>
                     <ThirdPage />
                 </div>
 
                 <div className="page four">
-                    <h1 className="consulting texts">  3) CONSULTING AND EVENTS PLANNING</h1>
                     <ContactForm />
                 </div>
                 
             </div>
+            <div className="footer">
+                © In'amorata of Mixology by Prasanna
+                </div>
         </div>
     )
 
