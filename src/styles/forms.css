@@ -47,3 +47,14 @@ form {
 	margin-bottom: 0;
 	/* padding-bottom: 0; */
   }
+
+#send{
+	cursor: pointer;
+	background-color: black;
+	color: #F2F3EB;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 10rem;
+	text-align: center;
+	border-radius: 8%;
+}

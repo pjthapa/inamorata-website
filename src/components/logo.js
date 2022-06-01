@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
 import {logo1} from '../images/'
 
 function Logo() {
@@ -24,12 +23,13 @@ function Logo() {
     return(
         <div>
         <div className="page one logo" style={{ height: `${pageHeight}px`}}>
-            <p>OF MIXOLOGY IN'AMORATA</p>
+            <p className="logotext">OF MIXOLOGY IN'AMORATA</p>
             <img src={logo1} alt="In'amorata Logo" id="page1" style={{ height: `${pageHeight * 0.8}px`,  transform: `translateY(${scrollY * 0.5}px)`}}/>
-            <p>BARTENDER UNDERGROUND</p>
+            <p className="logotext">BARTENDER UNDERGROUND</p>
         
         </div>
         <div class="empty scroll" style={{height:`${pageHeight}px`}}></div>
+        <h2 className="logotext">COMING SOON</h2>
         </div>
     )
 }

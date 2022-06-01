@@ -39,7 +39,7 @@ function ContactForm(){
             <div className="description">
                 Contact us with any queries and we will get back to you!
             </div>
-            <form onSubmit={onSubmit}>
+            <form >
                 <div className="name">
                     <label for="from_name">Name: </label>
                     <input
@@ -87,7 +87,7 @@ function ContactForm(){
                     <br />
                 </div>
 
-                <button type="submt" id="submit">Submit</button>
+                <p id="send" onClick={onSubmit}> CONTACT US</p>
             </form>
         </div>
     )

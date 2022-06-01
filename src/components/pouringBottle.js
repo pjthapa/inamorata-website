@@ -1,6 +1,6 @@
 import "../styles/pouring.css"
 import { useParallax } from "react-scroll-parallax";
-import {whisky_image, glass, shaker, daquiri} from "../images/"
+import {whisky_image, glass} from "../images/"
 
 export default function Pouringbottle(){
     const parallax = useParallax({
@@ -23,7 +23,7 @@ export default function Pouringbottle(){
 
             </div>
             <div className="right partition">
-                <h1>TUNE IN FOR MORE DETAILS LATER</h1>
+                <h1>HOME OF COCKTAILS</h1>
             </div>
         </div> 
     )
