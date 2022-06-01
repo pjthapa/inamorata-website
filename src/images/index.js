@@ -14,4 +14,5 @@ export const whisky_image = require("./whiskybttl.svg")
 export const cocktail = require("./coppermug.png")
 export const shaker = require("./shaker.png")
 export const creamyMartini = require("./creamyMartini.svg");
-export const glass = require("./glass4.png")
+export const glass = require("./glass4.png");
+export const instagram = require("./Instagram_icon.svg");
